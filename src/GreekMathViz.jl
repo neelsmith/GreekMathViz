@@ -1,6 +1,11 @@
 module GreekMathViz
+using CitableText
+using Luxor
 
-export Euclid
+
+export readmath
+
+export Euclid, is_euclid
 export Archimedes
 
 include("text_readers.jl")
