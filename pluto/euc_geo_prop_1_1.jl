@@ -8,7 +8,6 @@ using InteractiveUtils
 # ╠═╡ show_logs = false
 begin
 	using Pkg
-	#Pkg.activate(dirname(pwd()))
 	Pkg.add(url = "https://github.com/neelsmith/GreekMathViz.jl")
 	using GreekMathViz
 	Pkg.add("CitableText")
@@ -26,9 +25,10 @@ md"""## Euclid, *Geometry*, 1.1"""
 u = CtsUrn("urn:cts:greekLit:tlg1799.tlg001.luxor:1.prop.1")
 
 # ╔═╡ ea542cf1-0809-458e-a5e4-a2c906990ec4
+# ╠═╡ show_logs = false
 @draw begin
 	readmath(u)
-end 200 200 
+end  500 300
 
 # ╔═╡ Cell order:
 # ╠═25d8f838-901f-48ef-bdc6-2bbf966cb696
