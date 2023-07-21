@@ -1,8 +1,13 @@
 
-"Trait for how to parse strings into blocks"
+"Supertype for all types that read the mathematical content of ancient Greek texts."
 abstract type MathReaderType end
 
-
+"""Read the mathematical content of a text
+identified by `CtsUrn` by displatching
+to method of `readmath` with the appropriate
+reader type.
+$(SIGNATURES)
+"""
 function readmath(u::CtsUrn)
     if is_euclid(u)
         readmath(u, Euclid)
