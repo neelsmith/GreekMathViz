@@ -8,10 +8,9 @@ to method of `readmath` with the appropriate
 reader type.
 $(SIGNATURES)
 """
-function readmath(u::CtsUrn; format = :luxor)
+function readmath(u::CtsUrn; format = :luxor, config = Dict())
     if is_euclid(u)
-        readmath(u, Euclid; format = format)
-
+        readmath(u, Euclid; format = format, config = config)
 
     else
         @warn("No `MathReaderType` available for URN `$(u)`.")

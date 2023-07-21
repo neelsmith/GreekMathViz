@@ -12,7 +12,7 @@ export Archimedes
 include("text_readers.jl")
 
 include("euclid/euclid.jl")
-include("euclid/geometry/defs1.jl")
+include("euclid/geometry/bk1.jl")
 include("euclid/euclid_refs.jl")
 
 end # module GreekMathViz

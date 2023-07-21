@@ -14,4 +14,7 @@
     wrong_version = CtsUrn("urn:cts:greekLit:tlg1799.tlg001.NOT_LUXOR:1.def.1")
     @test  readmath(wrong_version) |> isnothing
 
+
+    wrong_passage = CtsUrn("urn:cts:greekLit:tlg1799.tlg001.NOT_LUXOR:NO_PASSAGE")
+    @test  readmath(wrong_passage) |> isnothing
 end
