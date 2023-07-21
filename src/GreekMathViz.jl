@@ -1,5 +1,10 @@
 module GreekMathViz
 
-greet() = print("Hello World!")
+export Euclid
+export Archimedes
+
+include("text_readers.jl")
+
+include("euclid/euclid.jl")
 
 end # module GreekMathViz
