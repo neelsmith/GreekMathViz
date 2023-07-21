@@ -1,0 +1,7 @@
+name = "GreekMathViz"
+uuid = "7ae53e4f-5b56-435d-b3ca-aff78d98811a"
+authors = ["Neel Smith <dnsmith.neel@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+CitableText = "41e66566-473b-49d4-85b7-da83b66615d8"
