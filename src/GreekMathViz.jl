@@ -2,6 +2,7 @@ module GreekMathViz
 using CitableText
 using Luxor
 
+using Documenter, DocStringExtensions
 
 export readmath
 
@@ -11,5 +12,7 @@ export Archimedes
 include("text_readers.jl")
 
 include("euclid/euclid.jl")
+include("euclid/geometry/defs1.jl")
+include("euclid/euclid_refs.jl")
 
 end # module GreekMathViz
