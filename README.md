@@ -1,1 +1,1 @@
-# GreekMathViz
+# GreekMathViz.jl
