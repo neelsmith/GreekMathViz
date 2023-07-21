@@ -15,4 +15,8 @@ include("euclid/euclid.jl")
 include("euclid/geometry/bk1.jl")
 include("euclid/euclid_refs.jl")
 
+include("archimedes/archimedes.jl")
+include("archimedes/sphere-cylinder/bk1.jl")
+include("archimedes/archimedes_refs.jl")
+
 end # module GreekMathViz

@@ -8,7 +8,7 @@ end
 
 function readmath(u, Euclid; format = :luxor, config = Dict())
     @info("Read Euclid for $(u)")
-    @info("Its versionid is $(versionid(u))")
+    @debug("Its versionid is $(versionid(u))")
     if format != :luxor 
         msg = "`readmath`: Only `:luxor` format currently supported."
         throw(ArgumentError(msg))
