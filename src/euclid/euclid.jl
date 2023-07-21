@@ -24,7 +24,7 @@ function readmath(u, Euclid; format = :luxor, config = Dict())
         f(config)
 
     else
-        @warn("`readmath`: no function implemented for URN `u`.")
+        @warn("`readmath`: no function implemented for URN $(u).")
         nothing
     end
 end
